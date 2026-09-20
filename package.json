@@ -1,7 +1,7 @@
 {
   "name": "k6-performance-template",
   "version": "1.0.0",
-  "description": "Template de testes de performance com k6 (smoke, load, stress, soak)",
+  "description": "Template de testes de performance com k6 (smoke, load, stress, soak, spike, breakpoint)",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,6 +10,8 @@
     "test:load": "k6 run src/tests/load/jsonplaceholder.load.js",
     "test:stress": "k6 run src/tests/stress/httpbin.stress.js",
     "test:soak": "k6 run src/tests/soak/restcountries.soak.js",
-    "test:all": "npm run test:smoke && npm run test:load && npm run test:stress"
+    "test:all": "npm run test:smoke && npm run test:load && npm run test:stress",
+    "test:spike": "k6 run src/tests/spike/target.spike.js",
+    "test:breakpoint": "k6 run src/tests/breakpoint/target.breakpoint.js"
   }
 }
