@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+results/raw/*
+!results/raw/.gitkeep
+results/reports/*
+!results/reports/.gitkeep
+*.log
+.DS_Store
+Thumbs.db
